@@ -68,3 +68,388 @@
 	margin-top: 9.6rem;
 }
 /* === header === */
+/* === main === */
+/* hero */
+.section-hero {
+	background-color: var(--secondary-color);
+	padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	column-gap: 9.6rem;
+}
+.hero-description {
+	margin-bottom: 4.8rem;
+	font-size: 2rem;
+	line-height: 1.6;
+}
+.delivered-meals {
+	margin-top: 8rem;
+	display: flex;
+	gap: 1.6rem;
+	align-items: center;
+}
+.delivered-imgs {
+	display: flex;
+}
+.delivered-imgs img {
+	width: 4.8rem;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	margin-right: -1.6rem;
+}
+.delivered-imgs img:last-child {
+	margin-right: 0;
+}
+.delivered-text {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+.delivered-text span {
+	font-weight: 700;
+	color: var(--contrast-color);
+}
+/* hero */
+/* featured */
+.section-featured {
+	padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+	font-size: 1.4rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+	text-align: center;
+	color: #888;
+	margin-bottom: 2.4rem;
+}
+.logos {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.logos img {
+	width: auto;
+	height: 3.2rem;
+	filter: contrast(0);
+}
+/* featured */
+/* how */
+.section-how {
+	padding: 9.6rem 0;
+}
+.step-number {
+	font-size: 8.6rem;
+	font-weight: 600;
+	margin-bottom: 1.2rem;
+	color: #ddd;
+}
+.step-description {
+	font-size: 1.8rem;
+	line-height: 1.8;
+}
+.step-img-box {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.step-img-box::before,
+.step-img-box::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+.step-img-box::before {
+	z-index: -2;
+	width: 60%;
+	padding-bottom: 60%;
+	background-color: #fdf2e9;
+}
+.step-img-box::after {
+	z-index: -1;
+	width: 45%;
+	padding-bottom: 45%;
+	background-color: #fae5d3;
+}
+.step-img {
+	width: 35%;
+}
+/* how */
+/* meal */
+.section-meals {
+	padding: 9.6rem 0;
+}
+.meal {
+	border-radius: var(--primary-radius);
+	overflow: hidden;
+	box-shadow: 0 2.4rem 4.8rem rgb(0 0 0/0.075);
+	transition: all 0.3s ease;
+}
+.meal:hover {
+	transform: translateY(-1.2rem);
+	box-shadow: 0 3.2rem 6.4rem rgb(0 0 0/0.06);
+}
+.meal-content {
+	padding: 3.2rem 4.8rem 4.8rem;
+}
+.meal-tags {
+	display: flex;
+	gap: 0.4rem;
+	margin-bottom: 1.2rem;
+}
+.tag {
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	border-radius: 100px;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #333;
+}
+.tag--vegan {
+	background-color: #94d82d;
+}
+.tag--paleo {
+	background-color: #ffd43b;
+}
+.tag--vegetarian {
+	background-color: #51cf66;
+}
+.meal-title {
+	font-size: 2.4rem;
+	margin-bottom: 3.4rem;
+	font-weight: 600;
+	color: #333;
+}
+.meal-attributes {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.meal-attribute {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	font-size: 1.8rem;
+}
+.meal-icon {
+	width: 2.4rem;
+	height: 2.4rem;
+	color: var(--primary-color);
+}
+.all-recipes {
+	text-align: center;
+}
+/* meal */
+/* testimonials */
+.section-testimonials {
+	display: grid;
+	grid-template-columns: 55fr 45fr;
+	align-items: center;
+	background-color: var(--secondary-color);
+}
+.testimonials-container {
+	padding: 9.6rem;
+}
+.testimonials {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4.8rem 8rem;
+}
+.testimonial-img {
+	width: 6.4rem;
+	border-radius: 50%;
+	margin-bottom: 1.2rem;
+}
+.testimonial-text {
+	font-size: 1.8rem;
+	line-height: 1.8;
+	margin-bottom: 1.6rem;
+}
+.testimonial-name {
+	color: #6f6f6f;
+	font-size: 1.6rem;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-content: center;
+	gap: 1.6rem;
+	padding: 1.6rem;
+}
+.gallery-item {
+	overflow: hidden;
+}
+.gallery-item img {
+	display: block;
+	transition: transform 0.3s ease;
+}
+.gallery-item img:hover {
+	transform: scale(1.1);
+}
+/* testimonials */
+/* pricing/features */
+.section-pricing {
+	padding: 9.6rem 0;
+}
+.pricing-plan {
+	border-radius: var(--primary-radius);
+	border: 2px solid var(--secondary-color);
+	width: 75%;
+}
+.pricing-plan--starter {
+	justify-self: end;
+	padding: 4.6rem;
+}
+.pricing-plan--complete {
+	overflow: hidden;
+	position: relative;
+	background-color: var(--secondary-color);
+	padding: 4.8rem;
+}
+.pricing-plan--complete::before {
+	content: "best value";
+	position: absolute;
+	top: 6%;
+	right: -18%;
+	background-color: #ffd43b;
+	transform: rotate(45deg);
+	padding: 0.8rem 8rem;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	color: #333;
+}
+.plan-header {
+	margin-bottom: 4.8rem;
+	text-align: center;
+}
+.plan-name {
+	text-transform: uppercase;
+	color: var(--contrast-color);
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 3.2rem;
+	letter-spacing: 0.75px;
+}
+.plan-price {
+	font-size: 6.2rem;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 1.6rem;
+}
+.plan-price span {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-right: 0.8rem;
+}
+.plan-text {
+	color: #767676;
+	line-height: 1.6;
+	font-size: 1.6rem;
+}
+.plan-sing-up {
+	text-align: center;
+	margin-top: 4.8rem;
+}
+.plan-details {
+	text-align: center;
+	line-height: 1.6;
+	font-size: 1.6rem;
+}
+.feature-icon {
+	width: 3.2rem;
+	height: 3.2rem;
+	color: var(--primary-color);
+	padding: 1.6rem;
+	border-radius: 50%;
+	background-color: var(--secondary-color);
+	margin-bottom: 3.2rem;
+}
+.feature-title {
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 1.6rem;
+}
+.feature-text {
+	font-size: 1.8rem;
+	line-height: 1.8;
+}
+/* pricing/features */
+/* cta */
+.section-cta {
+	padding: 4.8rem 0 12.8rem;
+}
+.cta {
+	border-radius: var(--primary-radius);
+	background: linear-gradient(to right bottom, #eb984e, var(--primary-color));
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	box-shadow: 0 2.4rem 4.8rem rgb(0 0 0/0.15);
+	overflow: hidden;
+}
+.cta-text-box {
+	padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+	color: #45260a;
+}
+.cta-text-box .heading-secondary {
+	color: inherit;
+	margin-bottom: 3.2rem;
+}
+.cta-text {
+	font-size: 1.8rem;
+	line-height: 1.8;
+	margin-bottom: 4.8rem;
+}
+.cta-form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.4rem 3.2rem;
+}
+.cta-form label {
+	display: block;
+	margin-bottom: 1.2rem;
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+.cta-form input,
+select {
+	padding: 1.2rem;
+	font-size: 1.8rem;
+	font-family: inherit;
+	border-radius: var(--primary-radius);
+	background-color: #fdf2e9;
+	width: 100%;
+	box-shadow: 0 1px 2px rgb(0 0 0/0.1);
+}
+.cta-form input::placeholder {
+	color: #aaa;
+}
+.cta-form button {
+	align-self: end;
+}
+.cta-img-box {
+	background-image: linear-gradient(
+			110deg,
+			rgb(235 151 78/0.35),
+			rgb(230 125 34/0.35)
+		),
+		url(../img/eating.jpg);
+	background-position: center;
+	background-size: cover;
+}
+/* cta */
+/* === main === */
